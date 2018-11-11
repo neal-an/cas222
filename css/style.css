@@ -93,7 +93,7 @@ body {
   height: 20px;
   background-color: #000;
 }
-.weatherBar {
+nav {
   position: fixed;
   height: 40px;
   width: 100%;
@@ -406,11 +406,16 @@ th {
     display: none;
   }
   .hero {
-    background-image: url(../images/run3.jpg);
     background-size: 100%;
     background-position: center;
     height: 500px;
     width: 100%;
+  }
+  .heroStyle1 {
+    background-image: url(../images/run3.jpg);
+  }
+  .heroStyle2 {
+    background-image: url(../images/bike2.jpg);
   }
   .desktopMenu {
     text-align: right;

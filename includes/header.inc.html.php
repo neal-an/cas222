@@ -1,5 +1,5 @@
 <header>
-        <div id="weatherBar" class="weatherBar">
+        <nav id="weatherBar" class="weatherBar">
             <div class="disappearDesktop">
                 <button class="hamburger">&#9776;</button>
                 <button class="cross">&#735;</button>
@@ -46,5 +46,5 @@
                 <a href="#"><img src="images/twit-ico.png" alt="" class="iconHeight"></a>&nbsp;
                 <a href="#"><img src="images/inst-ico.png" alt="" class="iconHeight"></a>
             </div>
-        </div>
+        </nav>
     </header>
