@@ -1,0 +1,93 @@
+// out: null
+
+@import 'palette.less';
+
+.headingStyle(@paramColor: #000;
+@paramSize: 1.2em) {
+    color: @paramColor; // this accepts a font color passed through as an argument
+    font-size: @paramSize; // this accepts a font size passed through as an argument
+    font-weight: bold; // this is static code... not everything has to be dynamic!
+    line-height: @paramSize; // this reuses the same font size as before to change line height
+    margin-top: @paramSize / 2;
+    margin-bottom: @paramSize / 2;
+    text-transform: uppercase;
+}
+
+.roundCorners(@paramRadius: 4px;
+@paramColor: #fff;
+@topBotPad: 5px;
+@autoPad: auto) {
+    -moz-border-radius: @paramRadius;
+    -webkit-border-raidus: @paramRadius;
+    border-radius: @paramRadius;
+    background-color: @paramColor;
+    margin-left: @autoPad;
+    margin-right: @autoPad;
+}
+
+.marginCenter {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.fontHeaderTwo {
+    font-family: 'Open Sans Condensed', sans-serif;
+}
+
+.fontHeaderOne {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+.fontBaseText {
+    font-family: 'Nunito', sans-serif;
+}
+
+.fontOswald {
+    font-family: 'Oswald', sans-serif;
+}
+
+.fontNarrow {
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.grayGradient {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,2D2D2D+100 */
+    background: #000000;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #000000 0%, #2D2D2D 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #000000 0%, #2D2D2D 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #000000 0%, #2D2D2D 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#3f3f3f', GradientType=1);
+    /* IE6-9 */
+}
+.grayGradientBtR {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#000000+0,2D2D2D+100 */
+    background: #000000;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #000000 0%, @mainRed 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #000000 0%, @mainRed 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #000000 0%, @mainRed 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#3f3f3f', GradientType=1);
+    /* IE6-9 */
+}
+
+.grayGradientWtR {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ffffff+0,2D2D2D+100 */
+    background: #000000;
+    /* Old browsers */
+    background: -moz-linear-gradient(left, #ffffff 0%, @mainRed 100%);
+    /* FF3.6-15 */
+    background: -webkit-linear-gradient(left, #ffffff 0%, @mainRed 100%);
+    /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to right, #ffffff 0%, @mainRed 100%);
+    /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#000000', endColorstr='#3f3f3f', GradientType=1);
+    /* IE6-9 */
+}
+

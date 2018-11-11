@@ -1,0 +1,599 @@
+/*
+Filename: style.css
+Programmer: Ashley Neal 
+*/
+
+@import 'palette.less';
+@import 'mixins.less';
+
+body {
+    .grayGradient;
+}
+
+.desktopMenu {
+    display: none;
+}
+
+.placeHolder {
+    height: 200px;
+    width: 100%;
+}
+
+main {}
+
+.hero {
+
+    background-image: url(../images/run3.jpg);
+    background-size: auto;
+    background-position: center;
+    height: 500px;
+    width: 100%;
+}
+
+.heroBot {
+    width: 100%;
+    height: 20px;
+    background-color: #000;
+}
+
+.weatherBar {
+    position: fixed;
+    height: 40px;
+    width: 100%;
+    background: black;
+    border-bottom: 3px red solid;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer {
+    height: 30px;
+    width: 100%;
+    background: black;
+    border-top: 3px red solid;
+}
+
+h1 {
+    .fontOswald;
+    font-size: 60px;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+.headerSize {
+    font-size: 50px;
+    .fontNarrow;
+    font-weight: normal;
+    letter-spacing: 1px;
+}
+
+.titleDiv {
+    padding-left: 15px;
+    width: 95%;
+    padding-top: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 15px;
+    border-bottom: 3px red solid;
+
+}
+
+.titleText {
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.disc {
+    margin-top: 40px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    .fontBaseText;
+    font-size: 1.5em;
+    color: #000;
+    text-align: center;
+    font-weight: lighter;
+    line-height: 30px;
+}
+
+.facebookFeed {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+
+.contentPad {
+    padding: 20px 20px 45px 20px;
+}
+
+.contentFill p {
+    font-size: 1.2em;
+    .fontBaseText;
+    line-height: 25px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.subHeader {
+    .fontNarrow;
+    font-size: 1.8em;
+}
+
+.subHeaderAlt {
+    .fontNarrow;
+    font-size: 1.8em;
+    color: #fff;
+}
+
+.sub_head_line {
+    height: 5px;
+    width: 95%;
+    .grayGradientBtR;
+}
+
+.sub_head_line_white {
+    height: 5px;
+    width: 95%;
+    .grayGradientWtR;
+}
+
+
+.darkSub {
+    background-color: #000;
+    color: #fff;
+}
+
+.lightSub {
+    background-color: #fff;
+    color: #000;
+}
+
+.tableDay {
+    text-align: center;
+    font-size: 1.2em;
+    .fontNarrow;
+}
+
+.timesTable {
+    margin: 10px;
+    margin-top: 20px;
+    align-content: center;
+    .fontBaseText;
+}
+
+.timesTable tr:first-child {
+    border: none;
+}
+
+.timesTable tr {
+    border-left: 2px @mainRed solid;
+    border-right: 2px @mainRed solid;
+}
+
+.timesTable table,
+tr,
+td,
+th {
+    border-collapse: collapse;
+    padding: 3px;
+}
+
+.timesTable th {
+    font-weight: bold;
+    padding: 10px;
+}
+
+.timesTable td {
+    padding: 10px;
+}
+
+.timesTable tr:nth-child(even) {
+    background-color: @darkGray;
+}
+
+.raceName {
+    width: 180px;
+}
+
+.raceTime {
+    width: 100px;
+}
+
+.startingTimeTableWrapper {
+    width: 100%;
+}
+
+.centering {
+    .marginCenter;
+}
+
+.socialWrapper {
+    width: 350px;
+    margin-top: 10px;
+    z-index: -1;
+}
+
+.subHeader:before {
+    height: 25px;
+    display: block;
+    content: '';
+}
+
+.subHeaderAlt:before {
+    height: 25px;
+    display: block;
+    content: '';
+}
+
+.weatherWrapper {
+    padding: 20px;
+}
+
+//Hamburger Menu CSS
+
+.hamburger {
+    background: none;
+    position: relative;
+    top: 0;
+    right: 0;
+    line-height: 35px;
+    color: red;
+    border: 0;
+    font-size: 1.4em;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    z-index: 10;
+}
+
+.cross {
+    background: none;
+    position: relative;
+    top: 0;
+    right: 0;
+    color: red;
+    border: 0;
+    font-size: 3em;
+    line-height: 55px;
+    font-weight: 700;
+    cursor: pointer;
+    outline: none;
+    z-index: 10;
+}
+
+.socialLinks {
+    background: none;
+    position: fixed;
+    top: 8px;
+    right: 10px;
+    color: red;
+    border: 0;
+    cursor: pointer;
+    outline: none;
+    z-index: 10;
+}
+
+.iconHeight {
+    height: 20px;
+}
+
+.menu {
+    /*    z-index: 10;*/
+    font-weight: 700;
+    width: 100%;
+    height: 100vh;
+    background: ~"rgb(0, 0, 0, .85)";
+    position: absolute;
+    top: 25px;
+    padding-top: 20px;
+    right: 0;
+    text-align: left;
+    font-size: 2em;
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto Condensed', sans-serif;
+    z-index: 10;
+    overflow: auto;
+}
+
+
+
+.menu ul {
+    list-style-type: none;
+    list-style-image: none;
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    color: white;
+}
+
+.menu li {
+    display: block;
+    padding: 15px 0;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.menu li:hover {
+    display: block;
+    /*    background: rgb(190, 200, 216, .25);*/
+    padding: 15px 0;
+    padding-left: 25px;
+    padding-right: 25px;
+    color: red;
+}
+
+
+.menu ul a {
+    text-decoration: none;
+    color: white;
+    margin: 0;
+}
+
+.menu ul a:hover {
+    text-decoration: none;
+    color: red;
+}
+
+.menu ul a:active {
+    text-decoration: none;
+    color: white;
+}
+
+.menu ul a:visted {
+    text-decoration: none;
+    color: gray;
+}
+
+.submenu li {
+    padding-left: 25px;
+    /*    background: rgb(190, 200, 216, .25);*/
+}
+
+// Scroll Bar Styling
+
+::-webkit-scrollbar {
+    background: ~"rgb(0, 0, 0, 0.0)";
+}
+
+::-webkit-scrollbar-button {
+    background: ~"rgb(255, 0, 0, 100.0)";
+}
+
+::-webkit-scrollbar-track {
+    background: ~"rgb(0, 0, 0, 0.0)";
+}
+
+::-webkit-scrollbar-track-piece {
+    background: ~"rgb(0, 0, 0, 100.0)";
+}
+
+::-webkit-scrollbar-thumb {
+    background: ~"rgb(255, 0, 0, 100.0)";
+}
+
+::-webkit-scrollbar-corner {
+    background: ~"rgb(255, 0, 0, 100.0)";
+}
+
+::-webkit-resizer {
+    background: ~"rgb(255, 0, 0, 100.0)";
+}
+/*  
+  ### DESKTOP
+*/
+
+@media only screen and (min-width: 1025px) {
+
+    .disappearDesktop {
+        display: none;
+    }
+
+//    .titleText {
+//        display: none;
+//    }
+
+    .hero {
+        background-image: url(../images/run3.jpg);
+        background-size: 100%;
+        background-position: center;
+        height: 500px;
+        width: 100%;
+    }
+
+    .desktopMenu {
+        text-align: right;
+        display: inline-block;
+        font-weight: 700;
+        width: 100%;
+        background: rgb(0, 0, 0, .85);
+        position: absolute;
+        right: 0;
+        text-align: center;
+        font-size: 1.4em;
+        text-decoration: none;
+        color: white;
+        font-family: 'Roboto Condensed', sans-serif;
+        z-index: 10;
+        top: 3px;
+    }
+    
+    .desktopMenuSubButton {
+        font-weight: 700;
+        background: rgb(0, 0, 0, .85);
+        right: 0;
+        text-align: center;
+        font-size: 1em;
+        text-decoration: none;
+        color: white;
+        font-family: 'Roboto Condensed', sans-serif;
+        z-index: 10;
+        border: none;
+        position: relative;
+    }
+    
+    .menuPlacement {
+        position: relative;
+        
+    }
+    
+    .desktopMenuSubButton:hover {
+        color: red;
+    }
+    
+    button:focus {
+        outline: 0;
+    }
+
+    .desktopMenu ul,
+    li {
+        display: inline-block;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+    
+    .desktopSubmenu {
+        position: absolute;
+        z-index: 10;
+        background: ~"rgb(0, 0, 0, .85)";
+        width: 200px;
+        margin-left: -100px;
+        font-size: 0.8em;
+    }
+
+    .desktopSubmenu li {
+        display: block;
+        padding: 10px;
+    }
+
+    .desktopMenu ul a {
+        text-decoration: none;
+        color: white;
+        margin: 0;
+    }
+
+    .desktopMenu ul a:hover {
+        text-decoration: none;
+        color: red;
+    }
+
+    .desktopMenu ul a:active {
+        text-decoration: none;
+        color: white;
+    }
+
+    .desktopMenu ul a:visted {
+        text-decoration: none;
+        color: gray;
+    }
+
+    .desktopPadding {
+        padding-left: 20%;
+        padding-right: 20%;
+    }
+
+    .titleText {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        letter-spacing: 8px;
+    }
+    
+    .headerSize {
+        letter-spacing: 8px;
+    }
+
+
+}
+
+/*
+
+
+
+
+
+  
+*/
+
+/* 
+  ### TABLET
+*/
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {}
+
+
+@media only screen and (max-width: 767px) {}
+
+/*
+
+
+    
+
+
+ 
+//*/
+
+//
+///* 
+//  ### MOBILE
+//*/
+//
+//@media only screen and (max-width: 767px) and (max-height: 600px) {
+//
+//    main {
+//        background-image: url(../images/run3.jpg);
+//        background-size: auto 100vh;
+//        background-position: center;
+//        width: 100%;
+//    }
+//    .heroImage {}
+//    .wrapper {
+//        height: ~"calc(100vh - 60px)";
+//    }
+//
+//    .weatherBar {
+//        height: 30px;
+//        width: 100%;
+//        background: black;
+//        border-bottom: 3px red solid;
+//    }
+//
+//    footer {
+//        height: 30px;
+//        width: 100%;
+//        background: black;
+//        border-top: 3px red solid;
+//    }
+//    h1 {
+//        .fontOswald;
+//        font-size: 2.5em;
+//        color: white;
+//        font-weight: bold;
+//        text-align: center;
+//    }
+//    .titleDiv {
+//        padding-top: ~"calc(16vh - 80px)";
+//        padding-left: 15px;
+//        padding-right: 15px;
+//    }
+//    .titleText {
+//        background-color: ~"rgb(0, 0, 0, .50)";
+//        padding-top: 20px;
+//        padding-bottom: 20px;
+//    }
+//
+//    .content {
+//        background-color: ~"rgb(0, 0, 0, .50)";
+//        padding: 20px;
+//        .fontBaseText;
+//        font-size: 1.5em;
+//        color: white;
+//        text-align: center;
+//        font-weight: lighter;
+//        line-height: 30px;
+//    }
+//
+//    .facebookFeed {
+//        display: none;
+//    }
+//}
