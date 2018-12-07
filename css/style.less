@@ -22,8 +22,6 @@ body {
 main {}
 
 .hero {
-
-    background-image: url(../images/run3.jpg);
     background-size: auto;
     background-position: center;
     height: 500px;
@@ -35,6 +33,36 @@ main {}
     height: 20px;
     background-color: #000;
 }
+
+.heroStyle1 {
+    background-image: url(../images/run3.jpg);
+}
+
+.heroStyle2 {
+    background-image: url(../images/bike2.jpg);
+    background-size: cover;
+}
+
+.heroStyle3 {
+    background-image: url(../images/run2.jpg);
+    background-size: cover;
+}
+
+.heroStyle4 {
+    background-image: url(../images/swim1.jpg);
+    background-size: cover;
+}
+
+.heroStyle5 {
+    background-image: url(../images/bike3.jpg);
+}
+
+.heroStyle6 {
+    background-image: url(../images/bike1.jpg);
+    background-size: cover;
+    
+}
+
 
 nav {
     position: fixed;
@@ -76,7 +104,6 @@ h1 {
     margin-right: auto;
     padding-right: 15px;
     border-bottom: 3px red solid;
-
 }
 
 .titleText {
@@ -230,8 +257,87 @@ th {
     padding: 20px;
 }
 
-//Hamburger Menu CSS
+form {
+    .fontBaseText;
+    padding: 1em;
+    padding-top: 35px;
+}
 
+.regTop td {
+    padding: 5px;
+}
+.regTop th {
+    text-align: left;
+}
+
+.raceName {
+    padding-left: 20px;
+}
+.raceNameColumn {
+    width: 80%;
+}
+.checkBoxColumn{
+    width: 20%;
+}
+.submitButton{
+    background-color: @mainRed;
+    .fontHeaderOne;
+    border: none;
+    color: white;
+    padding: 10px 40px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+.submitButtonColumn {
+    text-align: center;
+}
+
+label {
+    font-size: 1em;
+    margin-bottom: 1em;
+    padding-right: 10px;
+    font-weight: bold;
+}
+
+.regTable {
+    width: 95%;
+}
+
+.regTable tr, td {
+    vertical-align: top;
+}
+
+//.regTop 
+
+.regBot td {
+    width: 50%;
+}
+
+.dayHead {
+    font-weight: bold;
+    border-bottom: 1px @mediumGray solid;
+}
+.sectionSeparate {
+    border-top: 3px @mainRed solid;
+}
+
+.sectionSeparateBot {
+    border-bottom: 3px @mainRed solid;
+} 
+.sectionSeparate td {
+    padding: 10px;
+}
+.sectionSeparateBot td {
+  padding: 10px;
+}
+
+.honeypot {
+    display: none;
+}
+
+//Hamburger Menu CSS
 .hamburger {
     background: none;
     position: relative;
@@ -264,18 +370,22 @@ th {
 
 .socialLinks {
     background: none;
-    position: fixed;
-    top: 8px;
-    right: 10px;
+    padding-right: 10px;
+    padding-top: 8px;
     color: red;
     border: 0;
     cursor: pointer;
     outline: none;
     z-index: 10;
+    width: 300px;
+    text-align: center;
+    .marginCenter;
 }
 
 .iconHeight {
     height: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
 .menu {
@@ -296,8 +406,6 @@ th {
     z-index: 10;
     overflow: auto;
 }
-
-
 
 .menu ul {
     list-style-type: none;
@@ -323,7 +431,6 @@ th {
     padding-right: 25px;
     color: red;
 }
-
 
 .menu ul a {
     text-decoration: none;
@@ -352,7 +459,6 @@ th {
 }
 
 // Scroll Bar Styling
-
 ::-webkit-scrollbar {
     background: ~"rgb(0, 0, 0, 0.0)";
 }
@@ -380,6 +486,107 @@ th {
 ::-webkit-resizer {
     background: ~"rgb(255, 0, 0, 100.0)";
 }
+
+dt {
+    .fontOswald;
+    font-size: 1.5em;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+dt:hover {
+    color: #ff0000;
+}
+
+/* arrow icon left */
+
+dt:before {
+    border: 0.5em solid;
+    border-color: transparent transparent transparent #000;
+    content: '';
+    display: inline-block;
+    height: 0;
+    margin-right: 0.5em;
+    vertical-align: middle;
+    width: 0;
+}
+
+dt:hover:before {
+    border-left-color: #ff0000;
+
+}
+
+/* arrow icon down */
+
+dt.open:before {
+    border-color: #ff0000 transparent transparent transparent;
+    border-bottom-width: 0;
+}
+    
+dt.open:hover:before {
+    border-left-color: transparent;
+    border-top-color: #ff0000;
+}
+
+.headings {
+    font-family: monospace;
+}
+
+.nonPrimaryPage{
+    .fontHeaderTwo;
+    font-size: 2em;
+    line-height: normal;
+}
+
+.note {
+    font-size: .75em;
+    font-style: italic;
+}
+
+.ticketCosts li {
+    display: block;
+    font-size: 1.2em;
+    .fontBaseText;
+    padding-left: 10px;
+}
+
+.ticketCosts ul {
+    list-style-type: square;
+}
+
+  .responsive-iframe-container {
+  	position: relative;
+  	padding-bottom: 56.25%;
+  	padding-top: 30px;
+  	height: 0;
+  	overflow: hidden;
+  }
+
+  .responsive-iframe-container iframe,
+  .vresponsive-iframe-container object, 
+  .vresponsive-iframe-container embed {  
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+
+hr {
+    border-color: #ff0000;
+}
+
+.bring h5 {
+    font-size: 1.4em;
+    .fontBaseText;
+    margin-bottom: -4px;
+}
+
+.contactTable {
+    .marginCenter;
+}
+
 /*  
   ### DESKTOP
 */
@@ -390,22 +597,14 @@ th {
         display: none;
     }
 
-//    .titleText {
-//        display: none;
-//    }
-
+    //    .titleText {
+    //        display: none;
+    //    }
     .hero {
         background-size: 100%;
         background-position: center;
         height: 500px;
         width: 100%;
-    }
-    
-    .heroStyle1 {
-        background-image: url(../images/run3.jpg);
-    }
-    .heroStyle2 {
-        background-image: url(../images/bike2.jpg);
     }
 
     .desktopMenu {
@@ -424,7 +623,7 @@ th {
         z-index: 10;
         top: 3px;
     }
-    
+
     .desktopMenuSubButton {
         font-weight: 700;
         background: rgb(0, 0, 0, .85);
@@ -438,16 +637,16 @@ th {
         border: none;
         position: relative;
     }
-    
+
     .menuPlacement {
         position: relative;
-        
+
     }
-    
+
     .desktopMenuSubButton:hover {
         color: red;
     }
-    
+
     button:focus {
         outline: 0;
     }
@@ -458,7 +657,7 @@ th {
         padding-left: 10px;
         padding-right: 10px;
     }
-    
+
     .desktopSubmenu {
         position: absolute;
         z-index: 10;
@@ -504,7 +703,7 @@ th {
         padding-bottom: 20px;
         letter-spacing: 8px;
     }
-    
+
     .headerSize {
         letter-spacing: 8px;
     }

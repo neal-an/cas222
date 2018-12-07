@@ -2,7 +2,7 @@
     <h2 class="subHeader">About The Events</h2>
     <div class="sub_head_line_white"></div>
 
-    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut nisl turpis, semper ut turpis ut, luctus euismod urna. Nulla quis sem semper, maximus odio sed, posuere odio. Ut nec suscipit tortor, non rutrum nunc. Donec vitae luctus nulla. Suspendisse a volutpat justo. Vestibulum scelerisque scelerisque tristique. Nam ac odio id tellus placerat lacinia. </p>
+    <p>The Annual Ace in the Hole MultiSport Weekend is a legendary event in the Oregon triathlon and running community. It has become a traditional destination race for athletes from across the nation. </p>
 
-    <p>Nulla dolor tellus, auctor non consequat ut, interdum quis enim. In porttitor nunc in risus commodo congue. Donec commodo convallis aliquet. Vestibulum at interdum dui. Sed ultricies nunc vel ex scelerisque, eu tempor leo scelerisque. Quisque vitae fermentum justo.</p>
+    <p>There is something for every level of athletic ability. The weekend includes a first timer triathlon, a sprint, Olympic, and Half-Iron triathlons and 10K and Half marathon runs. Come to experience your first race or come to compete to win, but make sure you come to have fun!</p>
 </div>
